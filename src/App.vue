@@ -1,0 +1,116 @@
+<!--
+ * @version: 
+ * @Author: LHF
+ * @Date: 2021-05-14 09:52:05
+ * @LastEditors: LHF
+ * @LastEditTime: 2021-05-20 16:09:50
+-->
+<template>
+<div id="app">
+  <!-- <dv-flyline-chart :config="config" style="width:100%;height:100%;" /> -->
+  <router-view />
+</div>
+</template>
+<script>
+import moduleName from './assets/images/xs.jpg'
+export default {
+   data(){
+        return {
+            config:{
+                centerPoint: [0.48, 0.35],
+                points: [
+                    {
+                    position: [0.52, 0.235],
+                    text: '新乡'
+                    },
+                    {
+                    position: [0.43, 0.29],
+                    text: '焦作'
+                    },
+                    {
+                    position: [0.59, 0.35],
+                    text: '开封'
+                    },
+                    {
+                    position: [0.53, 0.47],
+                    text: '许昌'
+                    },
+                    {
+                    position: [0.45, 0.54],
+                    text: '平顶山'
+                    },
+                    {
+                    position: [0.36, 0.38],
+                    text: '洛阳'
+                    },
+                    {
+                    position: [0.62, 0.55],
+                    text: '周口'
+                    },
+                    {
+                    position: [0.56, 0.56],
+                    text: '漯河'
+                    },
+                    {
+                    position: [0.37, 0.66],
+                    text: '南阳'
+                    },
+                    {
+                    position: [0.55, 0.81],
+                    text: '信阳'
+                    },
+                    {
+                    position: [0.55, 0.67],
+                    text: '驻马店'
+                    },
+                    {
+                    position: [0.37, 0.29],
+                    text: '济源'
+                    },
+                    {
+                    position: [0.20, 0.36],
+                    text: '三门峡'
+                    },
+                    {
+                    position: [0.76, 0.41],
+                    text: '商丘'
+                    },
+                    {
+                    position: [0.59, 0.18],
+                    text: '鹤壁'
+                    },
+                    {
+                    position: [0.68, 0.17],
+                    text: '濮阳'
+                    },
+                    {
+                    position: [0.59, 0.10],
+                    text: '安阳'
+                    }
+                ],
+            },
+      }
+   }
+}
+</script>
+<style lang="scss">
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  // background-image: url('./assets/images/xs.jpg');
+  background-size: cover;
+  // background: #fff;
+  background: #000
+
+  // height: 500px;
+  // width: 500px;
+}
+*{
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+</style>
